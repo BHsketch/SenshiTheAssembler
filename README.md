@@ -1,0 +1,2 @@
+# Senshi the Assembler
+Senshi is an assembler project, currently destined for a "Simplified Instructional Computer (SIC)". The architecture for this machine, along with its instruction is given in the book "System Software" by Leland Beck. The algorithms followed in the initial versions of this project will be referenced from the same book. Updates to the README will be made on-the-fly as features are added to the project.
