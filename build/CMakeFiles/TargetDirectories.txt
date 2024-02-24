@@ -1,0 +1,3 @@
+/home/bhavya/cosmos/cse/projects/Senshi/build/CMakeFiles/Senshi.dir
+/home/bhavya/cosmos/cse/projects/Senshi/build/CMakeFiles/edit_cache.dir
+/home/bhavya/cosmos/cse/projects/Senshi/build/CMakeFiles/rebuild_cache.dir

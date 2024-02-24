@@ -36,7 +36,7 @@ std::shared_ptr<Instr> Lexer::getInstr()
 	std::shared_ptr<Instr> instructionBuf = std::make_shared<Instr>();
 	int whiteSpaceCount = 0;
 	std::vector<std::string> inputBuffer = {""};
-	int i = 0;
+	//int i = 0;
 
 	
 
@@ -56,7 +56,7 @@ std::shared_ptr<Instr> Lexer::getInstr()
 
 	if(curChar == '$')
 	{
-		std::cout<<"returning nullptr\n";
+		//std::cout<<"returning nullptr\n";
 		return nullptr;
 	}
 
