@@ -97,10 +97,24 @@ CMakeFiles/Senshi.dir/src/assembler/pass1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Senshi.dir/src/assembler/pass1.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bhavya/cosmos/cse/projects/Senshi/src/assembler/pass1.cpp -o CMakeFiles/Senshi.dir/src/assembler/pass1.cpp.s
 
+CMakeFiles/Senshi.dir/src/assembler/pass2.cpp.o: CMakeFiles/Senshi.dir/flags.make
+CMakeFiles/Senshi.dir/src/assembler/pass2.cpp.o: /home/bhavya/cosmos/cse/projects/Senshi/src/assembler/pass2.cpp
+CMakeFiles/Senshi.dir/src/assembler/pass2.cpp.o: CMakeFiles/Senshi.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bhavya/cosmos/cse/projects/Senshi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Senshi.dir/src/assembler/pass2.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Senshi.dir/src/assembler/pass2.cpp.o -MF CMakeFiles/Senshi.dir/src/assembler/pass2.cpp.o.d -o CMakeFiles/Senshi.dir/src/assembler/pass2.cpp.o -c /home/bhavya/cosmos/cse/projects/Senshi/src/assembler/pass2.cpp
+
+CMakeFiles/Senshi.dir/src/assembler/pass2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Senshi.dir/src/assembler/pass2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bhavya/cosmos/cse/projects/Senshi/src/assembler/pass2.cpp > CMakeFiles/Senshi.dir/src/assembler/pass2.cpp.i
+
+CMakeFiles/Senshi.dir/src/assembler/pass2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Senshi.dir/src/assembler/pass2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bhavya/cosmos/cse/projects/Senshi/src/assembler/pass2.cpp -o CMakeFiles/Senshi.dir/src/assembler/pass2.cpp.s
+
 CMakeFiles/Senshi.dir/src/lexer/instruction.cpp.o: CMakeFiles/Senshi.dir/flags.make
 CMakeFiles/Senshi.dir/src/lexer/instruction.cpp.o: /home/bhavya/cosmos/cse/projects/Senshi/src/lexer/instruction.cpp
 CMakeFiles/Senshi.dir/src/lexer/instruction.cpp.o: CMakeFiles/Senshi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bhavya/cosmos/cse/projects/Senshi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Senshi.dir/src/lexer/instruction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bhavya/cosmos/cse/projects/Senshi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Senshi.dir/src/lexer/instruction.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Senshi.dir/src/lexer/instruction.cpp.o -MF CMakeFiles/Senshi.dir/src/lexer/instruction.cpp.o.d -o CMakeFiles/Senshi.dir/src/lexer/instruction.cpp.o -c /home/bhavya/cosmos/cse/projects/Senshi/src/lexer/instruction.cpp
 
 CMakeFiles/Senshi.dir/src/lexer/instruction.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/Senshi.dir/src/lexer/instruction.cpp.s: cmake_force
 CMakeFiles/Senshi.dir/src/lexer/lexer.cpp.o: CMakeFiles/Senshi.dir/flags.make
 CMakeFiles/Senshi.dir/src/lexer/lexer.cpp.o: /home/bhavya/cosmos/cse/projects/Senshi/src/lexer/lexer.cpp
 CMakeFiles/Senshi.dir/src/lexer/lexer.cpp.o: CMakeFiles/Senshi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bhavya/cosmos/cse/projects/Senshi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Senshi.dir/src/lexer/lexer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bhavya/cosmos/cse/projects/Senshi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Senshi.dir/src/lexer/lexer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Senshi.dir/src/lexer/lexer.cpp.o -MF CMakeFiles/Senshi.dir/src/lexer/lexer.cpp.o.d -o CMakeFiles/Senshi.dir/src/lexer/lexer.cpp.o -c /home/bhavya/cosmos/cse/projects/Senshi/src/lexer/lexer.cpp
 
 CMakeFiles/Senshi.dir/src/lexer/lexer.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/Senshi.dir/src/lexer/lexer.cpp.s: cmake_force
 CMakeFiles/Senshi.dir/src/main/main.cpp.o: CMakeFiles/Senshi.dir/flags.make
 CMakeFiles/Senshi.dir/src/main/main.cpp.o: /home/bhavya/cosmos/cse/projects/Senshi/src/main/main.cpp
 CMakeFiles/Senshi.dir/src/main/main.cpp.o: CMakeFiles/Senshi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bhavya/cosmos/cse/projects/Senshi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Senshi.dir/src/main/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bhavya/cosmos/cse/projects/Senshi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Senshi.dir/src/main/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Senshi.dir/src/main/main.cpp.o -MF CMakeFiles/Senshi.dir/src/main/main.cpp.o.d -o CMakeFiles/Senshi.dir/src/main/main.cpp.o -c /home/bhavya/cosmos/cse/projects/Senshi/src/main/main.cpp
 
 CMakeFiles/Senshi.dir/src/main/main.cpp.i: cmake_force
@@ -143,6 +157,7 @@ CMakeFiles/Senshi.dir/src/main/main.cpp.s: cmake_force
 Senshi_OBJECTS = \
 "CMakeFiles/Senshi.dir/src/assembler/conversions.cpp.o" \
 "CMakeFiles/Senshi.dir/src/assembler/pass1.cpp.o" \
+"CMakeFiles/Senshi.dir/src/assembler/pass2.cpp.o" \
 "CMakeFiles/Senshi.dir/src/lexer/instruction.cpp.o" \
 "CMakeFiles/Senshi.dir/src/lexer/lexer.cpp.o" \
 "CMakeFiles/Senshi.dir/src/main/main.cpp.o"
@@ -152,12 +167,13 @@ Senshi_EXTERNAL_OBJECTS =
 
 Senshi: CMakeFiles/Senshi.dir/src/assembler/conversions.cpp.o
 Senshi: CMakeFiles/Senshi.dir/src/assembler/pass1.cpp.o
+Senshi: CMakeFiles/Senshi.dir/src/assembler/pass2.cpp.o
 Senshi: CMakeFiles/Senshi.dir/src/lexer/instruction.cpp.o
 Senshi: CMakeFiles/Senshi.dir/src/lexer/lexer.cpp.o
 Senshi: CMakeFiles/Senshi.dir/src/main/main.cpp.o
 Senshi: CMakeFiles/Senshi.dir/build.make
 Senshi: CMakeFiles/Senshi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/bhavya/cosmos/cse/projects/Senshi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Senshi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/bhavya/cosmos/cse/projects/Senshi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Senshi"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Senshi.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

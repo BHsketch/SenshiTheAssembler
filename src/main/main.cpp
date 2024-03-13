@@ -1,9 +1,11 @@
 #include"../../include/lexer/lexer.h"
 #include"../../include/assembler/pass1.h"
+#include"../../include/assembler/pass2.h"
 #include"../../include/assembler/symTab.h"
 #include"../../include/assembler/opTab.h"
 #include"../../include/assembler/conversions.h"
 #include<memory>
+#include<iostream>
 
 int main()
 {
@@ -36,5 +38,11 @@ int main()
 	(opTab->opTable)["wd"] = "dc";
 
 	pass1(lexer, symTab, opTab);
+	
+	std::cout<<"PASS 2 ABOUT TO BEGIN\n";
+
+	lexer.reset(); //lexer's destructor is called
+	std::shared_ptr<Lexer> lexer2 = std::make_shared<Lexer>();
+	pass2(lexer2, symTab, opTab);
 }
 

@@ -10,5 +10,6 @@ class Instr{
 	std::string operands = "";
 
 	void printFullInstr(int e);
+	void printFullInstrMachine(int e, std::string opCode, int operand);
 	
 };

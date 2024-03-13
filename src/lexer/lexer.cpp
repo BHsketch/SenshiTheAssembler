@@ -5,9 +5,11 @@
 #include<iostream>
 #include<string>
 
+std::ifstream Lexer::asmFile;
+
 char Lexer::readChar()
 {
-	static std::ifstream asmFile("test.asm");
+	//std::ifstream asmFile = asmFileGlobal;
 	if(asmFile.is_open())
 	{
 		//std::cout<<"opened file"<<"\n";
@@ -16,6 +18,8 @@ char Lexer::readChar()
 			curChar = '$';
 		}
 		//std::cout<<"stored char"<<"\n";
+	}else{
+		std::cout<<"input file stream is closed\n";
 	}
 
 	if(curChar != '$')
@@ -27,6 +31,7 @@ char Lexer::readChar()
 		//std::cout<<"DOLLARRRRRRR\n";
 		curChar = '$';
 		return curChar;
+
 	}
 	return curChar;
 }
@@ -100,6 +105,19 @@ std::shared_ptr<Instr> Lexer::getInstr()
 	
 	return instructionBuf;
 }
+
+Lexer::Lexer(){
+	asmFile.open("test.asm", std::ifstream::in);
+	//asmFile.open();
+}
+
+
+Lexer::~Lexer()
+{
+	asmFile.close();
+	std::cout<<"input file closed\n";
+}
+
 /*
 int main()
 {

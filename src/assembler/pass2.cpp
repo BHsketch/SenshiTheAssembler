@@ -1,5 +1,6 @@
 #include"../../include/lexer/lexer.h"
 #include"../../include/assembler/pass1.h"
+#include"../../include/assembler/pass2.h"
 #include"../../include/assembler/conversions.h"
 #include<sstream>
 #include<iostream>
@@ -7,13 +8,18 @@
 #include<unordered_map>
 #include<string>
 
-void pass1(std::shared_ptr<Lexer> lexer, std::shared_ptr<SymTab> symTab, std::shared_ptr<OpTab> opTab)
+void pass2(std::shared_ptr<Lexer> lexer, std::shared_ptr<SymTab> symTab, std::shared_ptr<OpTab> opTab)
 {
 	int LOCCTR;
 	std::shared_ptr<Instr> curInstruction = std::make_shared<Instr>();
 	int startAddr;
 
+	std::cout<<"hello\n";
 	curInstruction = lexer->getInstr();
+	std::cout<<"hello2\n";
+	
+	std::cout<<"opcode of first instr: "<<curInstruction->opCode<<"\n";
+
 	if( (curInstruction->opCode == "start")) 
 	{
 		//std::cout<<"FOUND START INSTRUCTION\n";
@@ -38,22 +44,24 @@ void pass1(std::shared_ptr<Lexer> lexer, std::shared_ptr<SymTab> symTab, std::sh
 		std::string curOpCode = curInstruction->opCode;
 		std::string curOperands = curInstruction->operands;
 		// update address of current instruction to LOCCTR (location counter)
+
+		std::string curOpCodeMachine="";
 		curInstruction->addr = intToHex(LOCCTR); 
 		int err = 0;
-
-		if(curInstruction->label != "")
-		{
-			if(symTab->symbolTable.find(curLabel) != symTab->symbolTable.end())
-			{
-				// argument 1 sets error condition 1: duplicate symbol
-				curInstruction->printFullInstr(1);	
-			}else{
-				(symTab->symbolTable)[curLabel] = LOCCTR;
-			}
-		}
+		int operandsMachineCode=0;
 
 		if(opTab->opTable.find(curOpCode) != opTab->opTable.end())
 		{
+			curOpCodeMachine = (opTab->opTable)[curOpCode];
+			if(symTab->symbolTable.find(curOperands) != symTab->symbolTable.end())
+			{
+				//this is a symbol
+				operandsMachineCode = (symTab->symbolTable)[curOperands]; 
+			}else{
+				//this is a number
+				//operandsMachineCode = curOperands;
+			}
+			//curInstruction->printFullInstr(1);
 			LOCCTR += 3;
 		}else if(curOpCode == "WORD")
 		{
@@ -73,21 +81,18 @@ void pass1(std::shared_ptr<Lexer> lexer, std::shared_ptr<SymTab> symTab, std::sh
 			// LEAVING THIS FUNCTIONALITY FOR NOW
 		}else{
 
-			err = 1;	
+			err = 1;
 		}
 		// print instruction to intermediate file
 		if(err ==1)
 		{
-
-			curInstruction->printFullInstr(1);	
+			curInstruction->printFullInstrMachine(1, curOpCodeMachine, operandsMachineCode);
 		}else{
 
-			curInstruction->printFullInstr(0);	
+			curInstruction->printFullInstrMachine(0, curOpCodeMachine, operandsMachineCode);
 
 		}
 
 		curInstruction = lexer->getInstr();
 	}
-
-
 }

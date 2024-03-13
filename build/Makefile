@@ -177,6 +177,30 @@ src/assembler/pass1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Senshi.dir/build.make CMakeFiles/Senshi.dir/src/assembler/pass1.cpp.s
 .PHONY : src/assembler/pass1.cpp.s
 
+src/assembler/pass2.o: src/assembler/pass2.cpp.o
+.PHONY : src/assembler/pass2.o
+
+# target to build an object file
+src/assembler/pass2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Senshi.dir/build.make CMakeFiles/Senshi.dir/src/assembler/pass2.cpp.o
+.PHONY : src/assembler/pass2.cpp.o
+
+src/assembler/pass2.i: src/assembler/pass2.cpp.i
+.PHONY : src/assembler/pass2.i
+
+# target to preprocess a source file
+src/assembler/pass2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Senshi.dir/build.make CMakeFiles/Senshi.dir/src/assembler/pass2.cpp.i
+.PHONY : src/assembler/pass2.cpp.i
+
+src/assembler/pass2.s: src/assembler/pass2.cpp.s
+.PHONY : src/assembler/pass2.s
+
+# target to generate assembly for a file
+src/assembler/pass2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Senshi.dir/build.make CMakeFiles/Senshi.dir/src/assembler/pass2.cpp.s
+.PHONY : src/assembler/pass2.cpp.s
+
 src/lexer/instruction.o: src/lexer/instruction.cpp.o
 .PHONY : src/lexer/instruction.o
 
@@ -264,6 +288,9 @@ help:
 	@echo "... src/assembler/pass1.o"
 	@echo "... src/assembler/pass1.i"
 	@echo "... src/assembler/pass1.s"
+	@echo "... src/assembler/pass2.o"
+	@echo "... src/assembler/pass2.i"
+	@echo "... src/assembler/pass2.s"
 	@echo "... src/lexer/instruction.o"
 	@echo "... src/lexer/instruction.i"
 	@echo "... src/lexer/instruction.s"
